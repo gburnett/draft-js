@@ -16,6 +16,7 @@
     "LICENSE"
   ],
   "main": "lib/Draft.js",
+  "types": "lib/index.d.ts",
   "style": "dist/Draft.css",
   "repository": "facebook/draft-js",
   "license": "MIT",
