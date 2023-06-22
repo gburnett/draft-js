@@ -208,9 +208,13 @@ gulp.task(
   }),
 );
 
+gulp.task('types', function() {
+  return gulp.src('src/**/*.d.ts').pipe(gulp.dest(paths.lib));
+});
+
 gulp.task(
   'dist',
-  gulp.series('modules', 'css', function() {
+  gulp.series('modules', 'css', 'types', function() {
     var opts = {
       debug: true,
       output: 'Draft.js',
