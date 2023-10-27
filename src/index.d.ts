@@ -1019,7 +1019,7 @@ declare namespace Draft {
         static create(): CharacterMetadata;
 
         getStyle(): DraftInlineStyle;
-        getEntity(): string;
+        getEntity(): string | null;
         hasStyle(style: string): boolean;
       }
 
